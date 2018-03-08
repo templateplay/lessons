@@ -1,6 +1,6 @@
 #general
 node_modules
-vendor
+assets/vendor
 .sass-cache
 .idea
 .DS_Store

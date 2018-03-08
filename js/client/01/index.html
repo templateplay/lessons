@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="asset/vendor/bootstrap/dist/css/bootstrap.min.css">
+    <script src="asset/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="asset/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <style>
+    .affix {
+        top: 0;
+        width: 100%;
+    }
+
+    .affix+.container-fluid {
+        padding-top: 70px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-fluid" style="background-color:#F44336;color:#fff;width: 100%;padding-top: 30px;">
+            <h1>Bootstrap Example</h1>
+            <h3>Click button show an alert message</h3>
+            <p>Use jQuery, Bootstrap</p>
+        </div>
+        <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Basic Topnav</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>
+        </nav>
+        <div class="container-fluid" style="height:1000px">
+            <h1>Content</h1>
+            <button type="button" class="btn btn-primary">Show</button>
+            <script>
+            $(document).ready(function() {
+                $("button").click(function() {
+                    alert("This is message");
+                });
+            });
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
